@@ -1,0 +1,109 @@
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+body{
+    background-color: rgb(255, 215, 164);
+    margin-left: 2em;
+    margin-right: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#Name {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(91, 46, 3);
+    font-size: 2rem;
+    /* border: 1px solid black;
+    border-radius: 50px;
+    display: inline-block;
+    padding: .5em; */
+}
+
+#center{
+    text-align: center;
+    padding: 12px;
+}
+img{
+    border-radius: 12px;
+}
+h2 {
+    color: rgb(91, 46, 3);
+    font-size: 1.45rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* border-bottom: 1px solid rgb(91, 46, 3); */
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: -.5px;
+}
+ul{
+    color: rgb(91, 46, 3);
+    font-size: 1.2rem;
+    font-weight: 400;
+    list-style: none;
+}
+li {
+    margin-bottom: .5em;
+}
+.para {
+margin-bottom: 3.5em;
+}
+
+
+@media (min-width: 426px) and (max-width:768px) {
+    body{
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    img {
+        width: 18em;
+    }
+    h2{
+        padding-left: .5em;
+    }
+    li{
+        padding-bottom: 0.1em;
+        margin-bottom: 0.5em;
+    }
+    
+    }
+@media (min-width:1025px) and (max-width:1440px){
+    body{
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+    img {
+        width: 20em;
+    }
+    li{
+        font-size: 1.25em;
+    }
+
+}
+@media (min-width:1440px){
+    body{
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+    img{
+        width: 30em;
+    }
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+    li{
+        font-size: 1.8em;
+    }
+}

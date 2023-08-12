@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="resources/Snapchat-1947026531 (1).jpg" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="overall">
+        <nav class="navbar">
+            <a href="#" class="logo">Varun V S</a>
+            <div id="Nav-container" class="nav-items nav-hide">
+                <a href="#Home" onclick="togglemenu()">Home</a>
+                <a href="#Skill" onclick="togglemenu()">Skill</a>
+                <a href="#Project" onclick="togglemenu()">Project</a>
+                <a href="#Contact" onclick="togglemenu()">Contact</a>
+            </div>
+            <div id="Menu-Bar" onclick="togglemenu()">
+                <div id="Menu-Top" class="menu"></div>
+                <div id="Menu-Middle" class="menu"></div>
+                <div id="Menu-Bottom" class="menu"></div>
+            </div>
+        </nav>
+        <div id="Home" class="sec1">
+            <div>
+                <p class="sec1-title">Web Developer</p>
+                <p class="sec1-para">I am a Web Development enthusiast currently in my final year at JIT. I have a keen interest in learning and excelling in the field of Web Development.</p>
+                <a class="sec1-button" href="#Contact">Contact Me</a>
+            </div>
+            <img class="sec1img" src="resources/Snapchat-1947026531 (1).jpg" alt="">
+        </div>
+        <div id="Skill" class="sec2">
+            <img class="sec2img" src="resources/Technical-Skills_How-to-Them-Master-in-2022.jpg.optimal.jpg" alt="">
+            <div>
+                <p class="sec2-title">Skills</p>
+                <p class="sec2-para">Html, Css, Js. I learnt a database in a begginer level. In ui ux i designed a some model for my personal use</p>
+            </div>
+
+        </div>
+        <div id="Project">
+            <h2 class="sec3-head">Project</h2>
+            <div  class="sec3main">
+                    <div class="img-p">
+                        <img src="./resources/python.jpg" alt="1">
+                        <p class="sec3-text">In python i did the basic and the small projects</p>
+                    </div>
+                    <div class="img-p">
+                        <img src="./resources/html.jpg" alt="2">
+                        <p class="sec3-text">In html i did the basic and the small web development </p>
+                    </div>
+                    <div class="img-p">
+                        <img src="./resources/webdev.jpg" alt="3">
+                        <p class="sec3-text">In Web Dev i did basic and the small Html & css projrct</p>
+                    </div> 
+            </div>
+        </div>
+        <div id="Contact">
+            <p class="sec4-title">Contact</p>
+            <div class="sec-icons">
+                <a href="mailto:moorthyvarun200@gmail.com"><img class="mail" src="./resources/icons8-mail-100.png" alt="mail"></a>
+                <a href="https://www.linkedin.com/in/varunv18/"><img class="linkedln" src="./resources/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.instagram.com/varuns_1817/?igshid=MzRlODBiNWFlZA%3D%3D"><img class="insta" src="./resources/icons8-instagram-100.png" alt="insta"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function togglemenu() {
+            document.getElementById("Menu-Top").classList.toggle("m1")
+            document.getElementById("Menu-Middle").classList.toggle("m2")
+            document.getElementById("Menu-Bottom").classList.toggle("m3")
+            document.getElementById("Nav-container").classList.toggle("nav-hide")
+        }
+    </script>
+</body>
+</html>
